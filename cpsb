@@ -1,0 +1,10 @@
+class temperature:
+    def __init__(self,degree):
+        self.degree=degree;
+    def tofahrenheit(self):
+        return 32+self.degree*1.8;
+    def tocelsius(self):
+        return (self.degree-32)/1.8;
+test=temperature(32);
+print(test.__dir__());
+print(test.__hash__());
